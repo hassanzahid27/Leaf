@@ -4,8 +4,8 @@ const Hero = () => {
   return (
     <section className="relative bg-[linear-gradient(180deg,rgba(144,222,120,0.15)_0%,rgba(187,249,168,0.15)_100%)] rounded-2xl py-20 px-4 sm:px-6 lg:px-20 text-center overflow-hidden ml-20 mr-20 mb-16">
       {/* Top Label */}
-      <div className="bg-white text-xs text-gray-700 font-semibold px-4 py-2 rounded-full shadow inline-block mb-6">
-        <img src="icon.png" alt="" />
+      <div className="bg-white text-xs text-gray-700 font-semibold px-4 py-2 w-[500px] ml-[400px] rounded-full shadow  flex  mb-6">
+        <img src="icon.png" className="mr-2.5" alt="" />
         AI-POWERED ENTERPRISE SEARCH FOR SEAMLESS INFORMATION DISCOVERY
       </div>
 

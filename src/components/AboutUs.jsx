@@ -159,9 +159,14 @@ const AboutUs = () => {
 
         {/* Right Box */}
         <div className="relative bg-[linear-gradient(180deg,rgba(144,222,120,0.15)_0%,rgba(187,249,168,0.15)_100%)] rounded-xl p-6 w-[800px] h-[270px]  ">
+          <img
+            src="dotted.svg"
+            className="ml-56 mt-12 positon: absolute"
+            alt=""
+          />
           {/* Grid Icons */}
 
-          <div className="  w-[30%] rounded-full h-full flex flex-wrap">
+          <div className="  w-[30%] pb-96 rounded-full h-full flex flex-wrap ">
             <img
               src="xml.png"
               alt="XML"
@@ -201,12 +206,13 @@ const AboutUs = () => {
           </div>
 
           {/* Dashed Arrow */}
-          <div className="hidden lg:block absolute top-36 right-48 transform -translate-y-1/2 h-px w-16 border-t border-green-500 border-dashed mr-32">
+          <div className="hidden lg:block absolute top-32 right-48 transform -translate-y-1/2 h-px w-16 border-t border-green-500 border-dashed mr-32">
             <img src="p.png" className="ml-16  " alt="" />
           </div>
 
-          <div className="hidden lg:block absolute top-24 right-20 transform -translate-y-1/2 h-px w-36 border-t border-green-500 border-dashed mr-80" />
-          <div className="hidden lg:block absolute top-48 right-20 transform -translate-y-1/2 h-px w-36 border-t border-green-500 border-dashed mr-80" />
+          {/* <div>
+            <img src="dotted.svg" className="ml-56 " alt="" />
+          </div> */}
 
           {/* Leaf Icon */}
           {/* <div className="hidden lg:block absolute top-1/2 right-4 transform -translate-y-1/2 bg-white p-3 rounded-xl shadow">

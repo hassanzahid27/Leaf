@@ -117,7 +117,7 @@ const KeyFeatures = () => {
           </p>
 
           <div className="md:flex md:justify-end">
-            <button className="bg-green-700 hover:bg-green-800 text-white px-5 py-2 rounded-lg text-sm font-medium w-full md:w-auto mr-[550px]">
+            <button className="bg-green-700 hover:bg-green-800 text-white px-5 py-2 rounded-lg text-sm font-medium w-full md:w-auto mr-[630px]">
               Get Started
             </button>
           </div>
@@ -131,10 +131,11 @@ const KeyFeatures = () => {
             key={idx}
             className="bg-white rounded-xl border border-gray-200 shadow-sm text-center px-8 py-10"
           >
-            <div className="flex justify-center items-center w-10 h-10 bg-green-100 rounded-full mx-auto mb-4">
+            <div className="bg-green-100 w-10 h-10 rounded-full ml-36 positon: absolute pr-5"></div>
+            <div className="flex  ml-34 mt-4  mx-auto  h-16 w-16 position: relative">
               {feature.icon}
             </div>
-            <h3 className="text-md font-semibold mb-2">{feature.title}</h3>
+            <h3 className="text-2xl font-bold mb-2">{feature.title}</h3>
             <p className="text-gray-600 text-sm">{feature.desc}</p>
           </div>
         ))}
