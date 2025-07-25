@@ -15,6 +15,7 @@
 //         </p>
 //       </div>
 
+//       {/* Toggle Buttons */}
 //       <div className="flex justify-center mb-12">
 //         <div className="inline-flex bg-gray-200 rounded-full p-1">
 //           <button className="px-4 py-1 rounded-full text-sm font-medium text-gray-600 hover:bg-white hover:text-black transition">
@@ -26,11 +27,11 @@
 //         </div>
 //       </div>
 
-//       {/* Cards */}
-//       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
+//       {/* Pricing Cards */}
+//       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-16">
 //         {/* Starter */}
-//         <div className="rounded-xl shadow-sm border border-gray-200 p-6 flex flex-col justify-between">
-//           <div>
+//         <div className="rounded-xl shadow-sm border border-gray-200 p-6 flex flex-col h-full">
+//           <div className="flex-1">
 //             <div className="text-center mb-4">
 //               <span className="text-xs font-semibold text-green-700 bg-[rgba(49,123,34,0.1)] px-3 py-1 rounded-full uppercase">
 //                 STARTER
@@ -57,17 +58,14 @@
 //               </li>
 //             </ul>
 //           </div>
-//           <button
-//             className="mt-6 text-sm font-medium px-4 py-4 rounded-md w-full bg-white text-black border
-//            border-[rgba(0,0,0,0.2)] hover:bg-gray-50"
-//           >
+//           <button className="mt-6 text-sm font-medium px-4 py-3 rounded-md w-full bg-white text-black border border-[rgba(0,0,0,0.2)] hover:bg-gray-50">
 //             Get started for free
 //           </button>
 //         </div>
 
 //         {/* Professional */}
-//         <div className="rounded-xl shadow-sm h-[400px] p-6 flex flex-col justify-between">
-//           <div>
+//         <div className="rounded-xl shadow-sm border border-gray-200 p-6 flex flex-col h-full">
+//           <div className="flex-1">
 //             <div className="text-center mb-4">
 //               <span className="text-xs font-semibold text-green-700 bg-[rgba(49,123,34,0.1)] px-3 py-1 rounded-full uppercase">
 //                 PROFESSIONAL
@@ -98,14 +96,14 @@
 //               </li>
 //             </ul>
 //           </div>
-//           <button className="mt-6 text-sm font-medium px-4 py-4 rounded-md w-full bg-[#317B22] text-white hover:bg-green-700">
+//           <button className="mt-6 text-sm font-medium px-4 py-3 rounded-md w-full bg-[#317B22] text-white hover:bg-green-700">
 //             Get started for free
 //           </button>
 //         </div>
 
 //         {/* Enterprise */}
-//         <div className="rounded-xl shadow-sm  border-gray-200 p-6 flex flex-col justify-between">
-//           <div>
+//         <div className="rounded-xl shadow-sm border border-gray-200 p-6 flex flex-col h-full">
+//           <div className="flex-1">
 //             <div className="text-center mb-4">
 //               <span className="text-xs font-semibold text-green-700 bg-[rgba(49,123,34,0.1)] px-3 py-1 rounded-full uppercase">
 //                 ENTERPRISE
@@ -140,7 +138,7 @@
 //               </li>
 //             </ul>
 //           </div>
-//           <button className="mt-6 text-sm font-medium px-4 py-4 rounded-md w-full bg-white text-black border border-[rgba(0,0,0,0.2)] hover:bg-gray-50">
+//           <button className="mt-6 text-sm font-medium px-4 py-3 rounded-md w-full bg-white text-black border border-[rgba(0,0,0,0.2)] hover:bg-gray-50">
 //             Get started for free
 //           </button>
 //         </div>
@@ -155,7 +153,7 @@ import React from "react";
 
 const PricingPlans = () => {
   return (
-    <section className="py-16 px-4 md:px-20 bg-white">
+    <section className="py-16 px-4 sm:px-10 md:px-16 lg:px-20 bg-white">
       {/* Header */}
       <div className="text-center mb-10">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
@@ -170,18 +168,18 @@ const PricingPlans = () => {
 
       {/* Toggle Buttons */}
       <div className="flex justify-center mb-12">
-        <div className="inline-flex bg-gray-200 rounded-full p-1">
-          <button className="px-4 py-1 rounded-full text-sm font-medium text-gray-600 hover:bg-white hover:text-black transition">
+        <div className="inline-flex bg-gray-200 rounded-full p-1 w-full sm:w-auto max-w-xs sm:max-w-none mx-auto">
+          <button className="w-1/2 sm:w-auto px-4 py-1 rounded-full text-sm font-medium text-gray-600 hover:bg-white hover:text-black transition">
             Monthly billing
           </button>
-          <button className="px-4 py-1 rounded-full text-sm font-medium text-gray-600 hover:bg-white hover:text-black transition">
+          <button className="w-1/2 sm:w-auto px-4 py-1 rounded-full text-sm font-medium text-gray-600 hover:bg-white hover:text-black transition">
             Annual billing
           </button>
         </div>
       </div>
 
       {/* Pricing Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto mb-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 max-w-7xl mx-auto mb-16">
         {/* Starter */}
         <div className="rounded-xl shadow-sm border border-gray-200 p-6 flex flex-col h-full">
           <div className="flex-1">
