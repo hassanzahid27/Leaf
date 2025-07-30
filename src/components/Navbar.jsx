@@ -6,46 +6,44 @@ const Navbar = () => {
 
   return (
     <nav className="flex items-center justify-between px-4 sm:px-6 py-4 bg-white sticky top-0 z-50 mb-9 mt-[20px]">
-      {/* Logo */}
       <img
         src="leaf.png"
-        className="ml-2 sm:ml-8 w-28 sm:w-32"
-        alt="LeafAI Logo"
+        alt="Leaf"
+        className="ml-4 sm:ml-8 md:ml-12  sm:w-32 w-[111px] h-[26.32px] "
       />
 
       {/* Desktop Menu */}
       <div className="hidden lg:flex items-center space-x-12 text-sm">
-        <ul className="flex space-x-[36px]">
-          <li>
-            <a href="#" className="hover:text-green-600">
+        <ul className="flex  gap-[48px] font-sans mr-16 text-[16px]">
+          <li className="mt-3.5">
+            <a href="#" className="hover:text-green-600 ">
               Home
             </a>
           </li>
-          <li>
+          <li className="mt-3.5">
             <a href="#" className="hover:text-green-600">
               Solution
             </a>
           </li>
-          <li>
+          <li className="mt-3.5">
             <a href="#" className="hover:text-green-600">
               Product
             </a>
           </li>
-          <li>
+          <li className="mt-3.5">
             <a href="#" className="hover:text-green-600">
               About US
             </a>
           </li>
-          <li>
+          <li className="mt-3.5">
             <a href="#" className="hover:text-green-600">
               Contact
             </a>
           </li>
+          <button className="bg-[#317B22] text-white h-[48px] w-[139px] rounded-md   hover:bg-green-700 text-xl">
+            Get Started
+          </button>
         </ul>
-
-        <button className="bg-[#317B22] text-white px-4 py-2 ml-6 mr-8 rounded-md text-sm hover:bg-green-700 mr-16">
-          Get Started
-        </button>
       </div>
 
       {/* Mobile Menu Button */}
