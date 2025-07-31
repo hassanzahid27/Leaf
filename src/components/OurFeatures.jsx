@@ -151,13 +151,13 @@ const OurFeatures = () => {
             </h3>
             <p
               style={{ letterSpacing: "0.5px" }}
-              className="text-[#6D6D6D] mb-4 text-base w-[332px] font-normal leading-6"
+              className="text-[#6D6D6D] mb-4 text-base max-w-[332px] font-normal leading-6"
             >
               {feature.desc}
             </p>
             <a
               href="#"
-              className="text-sm font-bold text-gray-900 hover:text-green-600 flex items-center gap-1 w-[97px]"
+              className="text-sm font-bold text-gray-900 hover:text-green-600 flex items-center gap-1 w-[]"
             >
               Learn more <span className="text-lg">→</span>
             </a>

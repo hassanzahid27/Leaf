@@ -4,16 +4,18 @@ const Hero = () => {
   return (
     <section className="relative bg-[linear-gradient(180deg,rgba(144,222,120,0.15)_0%,rgba(187,249,168,0.15)_100%)] rounded-2xl py-16 px-4 sm:px-6 xl:px-20 text-center overflow-hidden mx-4 sm:mx-10 xl:mx-20 mb-16">
       {/* Top Label */}
-      <div className="bg-white text-xs text-gray-700 font-normal text-[14px]  w-full max-w-[547px] mx-auto rounded-full shadow flex justify-center items-center mb-6 text-center h-[32px] ">
+      <div className="bg-white text-xs text-gray-700 font-normal text-[14px]   max-w-[547px] mx-auto rounded-full shadow flex justify-center items-center mb-6 text-center h-[32px] ">
         <img src="icon.png" className="w-4 h-4 mr-4 font-sans" alt="icon" />
         AI-POWERED ENTERPRISE SEARCH FOR SEAMLESS INFORMATION DISCOVERY
       </div>
 
       {/* Main Heading */}
-      <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold leading-tight text-black">
-        Unlock Your Organization’s <br />
-        Knowledge with <span className="text-green-600">LeafAI</span> Search
-      </h1>
+      <div className="flex items-center justify-center-safe">
+        <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold leading-tight text-black max-w-[807px]">
+          Unlock Your Organization’s <br />
+          Knowledge with <span className="text-green-600">LeafAI</span> Search
+        </h1>
+      </div>
 
       {/* Subtext */}
       <p className="text-[#6D6D6D] text-sm sm:text-base md:text-lg mb-8 max-w-2xl mx-auto px-2 mt-3 font-sans">
@@ -24,10 +26,10 @@ const Hero = () => {
 
       {/* Buttons */}
       <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 font-sans">
-        <button className="bg-[#317B22] text-white px-8 py-3.5 rounded-md text-sm hover:bg-green-700 w-full sm:w-auto">
+        <button className="bg-[#317B22] text-white px-8 py-3.5 rounded-md text-sm hover:bg-green-700 max-[165px] sm:w-auto">
           Get Started
         </button>
-        <button className="border border-green-800 px-8 py-3 rounded-md text-green-800 font-sans hover:bg-green-50 w-full sm:w-auto">
+        <button className="border border-green-800 px-8 py-3 rounded-md text-green-800 font-sans hover:bg-green-50 max-[165px]  sm:w-auto">
           See Demo
         </button>
       </div>
@@ -38,7 +40,7 @@ const Hero = () => {
         <img
           src="xml.png"
           alt="XML"
-          className="w-20 h-20 bg-white rounded-full p-4 shadow"
+          className="max-w-20 h-20 bg-white rounded-full p-4 shadow"
         />
       </div>
 

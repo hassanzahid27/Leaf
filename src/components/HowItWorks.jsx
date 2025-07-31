@@ -28,7 +28,7 @@ const HowItWorks = () => {
   const [activeStep, setActiveStep] = useState(0);
 
   return (
-    <section className="py-12 px-4 md:px-20  bg-[#F9FAF9] rounded-xl mb-12">
+    <section className="py-12 px-4 md:px-20 bg-[#F9FAF9] rounded-xl mb-12">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold">How it Works</h2>
         <p className="text-[#6D6D6D] font-sans mt-2">
@@ -38,9 +38,9 @@ const HowItWorks = () => {
         </p>
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-8 max-w-[1254px] mx-auto mb-2 px-0.5 ">
+      <div className="flex flex-col lg:flex-row gap-8 max-w-[1254px] mx-auto mb-2 px-0.5">
         {/* Left - Step List */}
-        <div className="flex-1 space-y-4 w-7xl">
+        <div className="flex-1 space-y-4 max-w-7xl">
           {steps.map((step, idx) => (
             <div
               key={idx}
@@ -76,7 +76,10 @@ const HowItWorks = () => {
         </div>
 
         {/* Right - Step Detail */}
-        <div className="flex-1 bg-white rounded-xl shadow p-6 flex flex-col justify-between min-h-[400px] lg:h-[591px] w-[668px]">
+        <div
+          className="flex-1 bg-white rounded-xl shadow p-6 flex flex-col justify-between min-h-[400px] lg:h-[591px] 
+        max-w-[668px]"
+        >
           <div>
             <h3 className="text-xl md:text-2xl font-bold mb-2">Connect</h3>
             <p className="text-[#6D6D6D] mb-6 text-[24px] font-sans tracking-[0.5px] md:text-base max-w-[589px] leading-8">
